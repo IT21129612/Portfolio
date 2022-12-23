@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<div id="header">
+    
+    <div class="container">
+        <nav>
+            <!--<img src="images/" class="logo"> -->
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <!--<li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>-->
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>Student</p>
+            <h1>Hi, I'm Nilmi Jayoda Pietersz</h1>
+        </div>    
+    </div>
+<!----------------------about----------------->
+</div>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="D:\portfolio\Images\img6.jpg">
+            </div>    
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I currently studying at Sri Lanka Institiute of Information Technology in Malabe. I'm in my 3rd academic year in the university.  I like to engaging with graphic designs and also like to discover
+                    new things in this digital world. I like to working as a colloborative person with eachother. I 
+                    also enjoy hanging out with my friends , singing and watching movies in my leisure time.  
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                        <li><span>Web Development</span><br>Website Development</li>
+                        <li><span>App Development</span><br>Building Android/iOS apps</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>B.Sc. Special (Hons) Degree in Information Technology(UG)</span><br>Undergraduate student in 3rd academic year</li>
+                        <li><span>GCE A/L Examination</span><br>1C and 2Ss in Commerce stream</li>
+                        <li><span>GCE O/L Examination</span><br>4As,2Bs and 3Cs</li>
+                    </ul>
+                </div>     
+            </div>
+        </div>
+    </div>
+</div>
+<!------------------services---------------------
+<div id="services">
+  <div class="container">
+    <h1 class="sub-title">My Services</h1>
+    <div class="services-list">
+        <div>
+            <h2>Web Design</h2>
+            <p>jfidfiodfdijfhdifhdsifhdsifdhfidhdjhsidfhsihhs
+            jdhs</p>
+            <a href="#">Learn more</a>
+        </div>
+        <div>
+            <h2>UI/UX Design</h2>
+            <p>jfidfiodfdijfhdifhdsifhdsifdhfidhdjhsidfhsihhs
+            jdhs</p>
+            <a href="#">Learn more</a>
+        </div>
+        <div>
+            <h2>App Design</h2>
+            <p>jfidfiodfdijfhdifhdsifhdsifdhfidhdjhsidfhsihhs
+            jdhs</p>
+            <a href="#">Learn more</a>
+        </div>
+    </div>
+  </div>  
+</div>
+-->
+<!-------------------------portfolio--------------->
+<div id="portfolio">
+    <h1 class="sub-title">My Work</h1>
+    <div class="gallery">
+        <img src="D:\portfolio\images\img1.jpg" alt="">
+        <img src="D:\portfolio\images\img2.jpg" alt="">
+        <img src="D:\portfolio\images\img3.jpg" alt="">
+        <img src="D:\portfolio\images\img4.jpg" alt="">
+        <img src="D:\portfolio\images\img5.jpg" alt="">
+    </div>
+</div>
+
+
+<script>
+
+   var tablinks = document.getElementsByClassName("tab-links");
+   var tabcontents = document.getElementsByClassName("tab-contents");
+
+   function opentab(tabname){
+    
+    for(tablink of tablinks){
+    
+        tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+
+   }
+
+</script>
+
+</body>
+</html>
